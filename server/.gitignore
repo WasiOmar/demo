@@ -1,0 +1,6 @@
+node_modules/
+.env
+.DS_Store  # For macOS users
+.vscode/
+npm-debug.log
+yarn-debug.log
