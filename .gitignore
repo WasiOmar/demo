@@ -2,3 +2,4 @@
 /website-boilerplate/node_modules
 /server/.env
 /website-boilerplate/.env
+/server/api/.env

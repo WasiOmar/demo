@@ -1,7 +1,7 @@
 const express = require('express');
 require('dotenv').config();
-const connectDB = require('./connect');
-const User = require('./models/User');
+const connectDB = require('../connect');
+const User = require('../models/User');
 const cors = require('cors');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
@@ -20,7 +20,7 @@ app.post('/api/auth/signup', async (req, res) => {
         res.status(500).json({ msg: err.message });
     }
 });
-app.get('/test', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Server is working');
 });
 
